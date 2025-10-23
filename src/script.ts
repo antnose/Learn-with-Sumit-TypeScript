@@ -62,11 +62,24 @@
 
 // console.log(e);
 
-// ########### How to use Functions ###########3
+// ########### How to use Functions ###########
 
-const myFunc = (a: string, b: string, c: string = "St") => {
-  console.log(c);
-  console.log(`Hello ${a} ${b}`);
+// const myFunc = (a: string, b: string, c: string = "St") => {
+//   console.log(c);
+//   console.log(`Hello ${a} ${b}`);
+// };
+
+// myFunc("Robi", "Kobi");
+
+// ########### Type aliases ###########
+
+type stringOrNumber = string | number;
+type userType = { name: string; age: number };
+
+const userDetails = (id: stringOrNumber, user: userType) => {
+  console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
 
-myFunc("Robi", "Kobi");
+const sayHello = (user: userType) => {
+  console.log(`Hello ${user.age} ${user.name} `);
+};
