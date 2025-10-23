@@ -24,5 +24,21 @@ let b;
 a = "Sumit";
 b = 45;
 console.log(a, b);
+let c;
+c = ["Learn With Sumit"];
+console.log(c);
+let d;
+d = ["Mixed", 45];
+console.log(d);
+d.push(44);
+console.log(d);
+// Object
+let e;
+e = {
+    name: "sumit",
+    age: 35,
+    adult: true,
+};
+console.log(e);
 export {};
 //# sourceMappingURL=script.js.map
