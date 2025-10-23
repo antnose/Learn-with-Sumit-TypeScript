@@ -24,3 +24,14 @@
 // };
 
 // person.name = "Rokib";
+
+// ------------------------------------------------------
+// ############### Explicit & Union Types ###############
+
+let a: string;
+let b: number;
+
+a = "Sumit";
+b = 45;
+
+console.log(a, b);

@@ -1,6 +1,5 @@
 // const country = "Bangladesh";
 // console.log(country);
-export {};
 // let playerName = "Mashrafi";
 // console.log(playerName);
 // const multiply = (a: number, b: number) => {
@@ -18,4 +17,12 @@ export {};
 //   isCaptain: true,
 // };
 // person.name = "Rokib";
+// ------------------------------------------------------
+// ############### Explicit & Union Types ###############
+let a;
+let b;
+a = "Sumit";
+b = 45;
+console.log(a, b);
+export {};
 //# sourceMappingURL=script.js.map
