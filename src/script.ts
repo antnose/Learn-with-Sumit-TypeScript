@@ -85,10 +85,33 @@
 // };
 
 // ########### Function Signature ###########
-let add: (x: number, y: number) => number;
+// let add: (x: number, y: number) => number;
 
-add = (a: number, b: number) => {
-  return a + b;
-};
+// add = (a: number, b: number) => {
+//   return a + b;
+// };
 
-console.log(add(12, 45));
+// console.log(add(12, 45));
+
+// ########### Classes ###########
+class Player {
+  name: string;
+  age: number;
+  country: string;
+
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    (this.age = a), (this.country = c);
+  }
+
+  play() {
+    console.log(`${this.name} from ${this.country} is playing`);
+  }
+}
+
+const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
+const sakib = new Player("Sakib", 48, "Bangladesh");
+
+const players: Player[] = [];
+
+players.push(sakib);
