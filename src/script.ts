@@ -94,21 +94,29 @@
 // console.log(add(12, 45));
 
 // ########### Classes ###########
-class Player {
-  constructor(
-    private name: string,
-    public age: number,
-    readonly country: string
-  ) {}
+// import { Player } from "./classes/player.js";
+// const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
+// const sakib = new Player("Sakib", 48, "Bangladesh");
 
-  play() {
-    console.log(`${this.name} from ${this.country} is playing`);
-  }
+// const players: Player[] = [];
+
+// players.push(sakib);
+
+interface rectangeOptions {
+  width: number;
+  length: number;
 }
 
-const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
-const sakib = new Player("Sakib", 48, "Bangladesh");
+function drawRectangle(options: rectangeOptions) {
+  let width = options.width;
+  const length = options.length;
+  return { width, length };
+}
 
-const players: Player[] = [];
+let threeDOptions = {
+  width: 40,
+  length: 50,
+  height: 10,
+};
 
-players.push(sakib);
+drawRectangle(threeDOptions);
