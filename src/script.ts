@@ -73,13 +73,22 @@
 
 // ########### Type aliases ###########
 
-type stringOrNumber = string | number;
-type userType = { name: string; age: number };
+// type stringOrNumber = string | number;
+// type userType = { name: string; age: number };
 
-const userDetails = (id: stringOrNumber, user: userType) => {
-  console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+// const userDetails = (id: stringOrNumber, user: userType) => {
+//   console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+// };
+
+// const sayHello = (user: userType) => {
+//   console.log(`Hello ${user.age} ${user.name} `);
+// };
+
+// ########### Function Signature ###########
+let add: (x: number, y: number) => number;
+
+add = (a: number, b: number) => {
+  return a + b;
 };
 
-const sayHello = (user: userType) => {
-  console.log(`Hello ${user.age} ${user.name} `);
-};
+console.log(add(12, 45));
