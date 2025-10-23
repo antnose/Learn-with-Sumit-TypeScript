@@ -28,36 +28,45 @@
 // ------------------------------------------------------
 // ############### Explicit & Union Types ###############
 
-let a: string;
-let b: number;
+// let a: string;
+// let b: number;
 
-a = "Sumit";
-b = 45;
+// a = "Sumit";
+// b = 45;
 
-console.log(a, b);
+// console.log(a, b);
 
-let c: string[];
-c = ["Learn With Sumit"];
-console.log(c);
+// let c: string[];
+// c = ["Learn With Sumit"];
+// console.log(c);
 
-let d: (string | number)[];
-d = ["Mixed", 45];
-console.log(d);
-d.push(44);
-console.log(d);
+// let d: (string | number)[];
+// d = ["Mixed", 45];
+// console.log(d);
+// d.push(44);
+// console.log(d);
 
 // Object
 
-let e: {
-  name: string;
-  age: number;
-  adult: boolean;
+// let e: {
+//   name: string;
+//   age: number;
+//   adult: boolean;
+// };
+
+// e = {
+//   name: "sumit",
+//   age: 35,
+//   adult: true,
+// };
+
+// console.log(e);
+
+// ########### How to use Functions ###########3
+
+const myFunc = (a: string, b: string, c: string = "St") => {
+  console.log(c);
+  console.log(`Hello ${a} ${b}`);
 };
 
-e = {
-  name: "sumit",
-  age: 35,
-  adult: true,
-};
-
-console.log(e);
+myFunc("Robi", "Kobi");

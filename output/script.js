@@ -19,26 +19,36 @@
 // person.name = "Rokib";
 // ------------------------------------------------------
 // ############### Explicit & Union Types ###############
-let a;
-let b;
-a = "Sumit";
-b = 45;
-console.log(a, b);
-let c;
-c = ["Learn With Sumit"];
-console.log(c);
-let d;
-d = ["Mixed", 45];
-console.log(d);
-d.push(44);
-console.log(d);
+// let a: string;
+// let b: number;
+// a = "Sumit";
+// b = 45;
+// console.log(a, b);
+// let c: string[];
+// c = ["Learn With Sumit"];
+// console.log(c);
+// let d: (string | number)[];
+// d = ["Mixed", 45];
+// console.log(d);
+// d.push(44);
+// console.log(d);
 // Object
-let e;
-e = {
-    name: "sumit",
-    age: 35,
-    adult: true,
+// let e: {
+//   name: string;
+//   age: number;
+//   adult: boolean;
+// };
+// e = {
+//   name: "sumit",
+//   age: 35,
+//   adult: true,
+// };
+// console.log(e);
+// ########### How to use Functions ###########3
+const myFunc = (a, b, c = "St") => {
+    console.log(c);
+    console.log(`Hello ${a} ${b}`);
 };
-console.log(e);
+myFunc("Robi", "Kobi");
 export {};
 //# sourceMappingURL=script.js.map
